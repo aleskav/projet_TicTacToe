@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Tic-Tac-Toe</title>
+</head>
+<body>
+  <div class="game-container"> 
+    <h1>Tic-Tac-Toe</h1>
+    <div class="game">   
+     
+      <!--Création de ma table/carrés du joueu-->
+
+      <table>
+        <tr>
+          <td id="cellule-0-0" onclick="play(this)">.</td>
+          <td id="cellule-0-1" onclick="play(this)">.</td>
+          <td id="cellule-0-2" onclick="play(this)">.</td>
+        </tr>
+        <tr>
+          <td id="cellule-1-0" onclick="play(this)">.</td>
+          <td id="cellule-1-1" onclick="play(this)">.</td>
+          <td id="cellule-1-2" onclick="play(this)">.</td>
+        </tr>
+        <tr>
+          <td id="cellule-2-0" onclick="play(this)">.</td>
+          <td id="cellule-2-1" onclick="play(this)">.</td>
+          <td id="cellule-2-2" onclick="play(this)">.</td>
+        </tr>
+      </table>
+
+      <div id="auJeu"></div> <!-- Champ pour afficher le message de la fonction JoueurSuivant() -->
+
+      <h2 id="message">Cliquez un des boutons pour débuter le jeu</h2>
+      
+    </div>
+      
+     
+    <div class="buttons"> <!--Les boutons du joeu-->
+      <button onclick="JeuSolo()">Jouer contre l'ordinateur</button> <!--midificar-->
+      <button onclick="JeuADeux()">Jouer à deux joueurs</button> <!--midificar-->
+      <button onclick="PositionDeDepart()">Remise à zéro</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
